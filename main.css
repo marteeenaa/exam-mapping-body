@@ -1,0 +1,355 @@
+body {
+  background-color: #1D1B1A;
+  margin-top: 0px;
+}
+.br {
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+
+.bl {
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pt5 {
+    padding-top: 1rem;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.w-100 {
+    width: 96%;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* grid bg */
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr 0.3fr 1.5fr;
+  grid-template-rows: 1fr;
+  z-index: -1;
+  grid-auto-flow: row;
+}
+
+.grid {
+  /* display: none; */
+  margin-top: 3rem;
+  min-height: calc(100vh - 8.6rem);
+  /* padding-left: 1.3rem;
+  padding-right: 1.3rem; */
+}
+
+.grid-project {
+  padding-left: calc(1rem + 1.8px);
+  padding-right: calc(1rem + 1.8px);
+}
+
+.index-grid > div,
+.single-grid > div,
+.selected-grid > div,
+.general-grid > div,
+.grid-grid > div {
+  border-color: green;
+  height: 9px;
+}
+
+.list-project {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 0.3fr 1.5fr;
+  grid-template-rows: 1fr;
+  z-index: -1;
+  grid-auto-flow: row;
+}
+
+/* grid single */
+.single-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: -1;
+  top: 0;
+  grid-column-gap: 1rem;
+  grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+/* selected grid */
+.selected-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: -1;
+  grid-column-gap: 1rem;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  align-items: end;
+}
+
+.general-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: -1;
+  grid-column-gap: 1rem;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  align-items: center;
+}
+
+.start-scroll {
+   line-height: 0.7;
+}
+
+.grid-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  z-index: -1;
+  grid-column-gap: 1rem;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  align-items: end;
+}
+
+.page-template-list .grid-grid {
+  display: none;
+}
+
+.header {
+  color:white;
+  margin-top: 5px;
+  font-family:Happy Times at the IKOB New Game Plus Edition;
+  text-transform: uppercase;
+}
+
+.header > .home_button {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header > .mappingbody_button {
+  font-size: 14px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header > .quantifiedbody_button {
+  font-size: 14px;
+  margin-left: 50px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: 100vh;
+    overflow: hidden;
+    /*pointer-events: none;*/
+    top: 0;
+}
+
+.video {
+    width: 90vw;
+    margin: 0;
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, 3%);
+    height: 90vh;
+}
+
+.heartbeatAudio {
+  visibility: hidden;
+}
+
+.video-controls {
+  pointer-events: all;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75vw;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom;
+    vertical-align: bottom;
+}
+
+p{
+  font-family: Happy Times at the IKOB New Game Plus Edition;
+  color: #00FF00; 
+  margin-top: 0px;
+  font-size: 30px;
+}
+.btn-group {
+    position: absolute;
+    right: 6.5vw;
+    top: 670px;
+}
+.btn-group button {
+  font-family: Happy Times at the IKOB New Game Plus Edition;
+  font-size: 15px;
+  margin: 5px 1px;
+  background-color: rgba(255, 255, 255, 0.5); 
+  border: none;
+  color: #1d1b1a; 
+  padding: 1px 20px; 
+  cursor: pointer; 
+  width: 15vh; 
+  border-radius: 5px;
+  float: none;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+/*.btn-group button:hover {
+  background-color: #00ff00;
+}*/
+
+.btn-group-2 {
+position: absolute;
+left: 6.5vw;
+top: 670px;
+}
+
+.btn-group-2 button {
+  font-family: Happy Times at the IKOB New Game Plus Edition;
+  font-size: 15px;
+  margin: 5px 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #1d1b1a; /* Black text */
+  padding: 1px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 15vh; /* Set a width if needed */
+  border-radius: 5px;
+  float: none;
+}
+
+.btn-group-2:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group-2 button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover 
+.btn-group-2 button:hover {
+  background-color: #00ff00;
+}*/
+
+.btn-group button.active {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+.btn-group-2 button.active {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+
+
+
+:root {
+  --duration: 10s;
+  --duration-double: 20s;
+}
+
+.container {
+  width: 100%;
+  background: #111; 
+  position: fixed;
+  bottom: 45px;
+}
+
+.first-slide {
+  font-size: 20px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.first-slide span {
+  display: inline-block;
+  animation-name: slide-then-hide;
+  animation-duration: var(--duration);
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  border: none;
+}
+
+.words {
+  font-size: 20px;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  width: 100vw;
+}
+
+.words span {
+  display: inline-block;
+  padding-left: 100%;
+  animation-name: slide;
+  animation-duration: var(--duration-double);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  color: #00ff00;
+}
+
+.words--second span {
+  animation-delay: var(--duration);
+  color: #00ff00;
+}
+
+@keyframes slide-then-hide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    display: none;
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+video.miniVideo {
+width: 90vw;
+margin: 0;
+position: absolute;
+margin-left: 50%;
+transform: translate(-50%, 3%);
+height: 90vh;
+}
+
+video.invisible {
+  display: none;
+}
+
+
